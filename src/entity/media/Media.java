@@ -1,5 +1,6 @@
 package entity.media;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +40,7 @@ public class Media {
         return null;
     }
 
-    public ArrayList<Media> getAllMedia() {
+    public static ArrayList<Media> getAllMedia() {
         return AIMSDB.media;
     }
 
